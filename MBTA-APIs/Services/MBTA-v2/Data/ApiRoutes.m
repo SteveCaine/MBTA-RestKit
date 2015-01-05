@@ -108,6 +108,21 @@
 	}];
 }
 
+- (ApiRoute *)routeByID:(NSString *)routeID {
+	ApiRoute *result = nil;
+	for (ApiRouteMode * mode in self.modes) {
+		for (ApiRoute *route in mode.routes) {
+			if ([route.ID isEqualToString:routeID]) {
+				result = route;
+				break;
+			}
+			if (result)
+				break;
+		}
+	}
+	return result;
+}
+
 - (NSString *)description {
 	NSMutableString *result = [NSMutableString stringWithFormat:@"<%@ %p>", NSStringFromClass([self class]), self];
 	if ([self.modes count]) {

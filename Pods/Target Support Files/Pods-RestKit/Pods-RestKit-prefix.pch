@@ -19,3 +19,9 @@
   #import <CoreServices/CoreServices.h>
   #import <Security/Security.h>
 #endif
+
+// SPC 2014-12-31 flag to enable/disable writing
+// full text of JSON/XML response to NSLog()
+#ifdef DEBUG
+#define DEBUG_logRawResponse	0
+#endif

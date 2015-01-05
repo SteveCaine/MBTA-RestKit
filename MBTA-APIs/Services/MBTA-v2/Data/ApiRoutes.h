@@ -42,6 +42,7 @@
 @property (strong, nonatomic) NSArray *modes;
 + (void)get_success:(void(^)(ApiRoutes *data))success
 			failure:(void(^)(NSError *error))failure;
+- (ApiRoute *)routeByID:(NSString *)routeID;
 @end
 
 // ----------------------------------------------------------------------

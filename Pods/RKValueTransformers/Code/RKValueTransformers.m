@@ -787,7 +787,9 @@ static dispatch_once_t RKDefaultValueTransformerOnceToken;
 - (BOOL)transformValue:(id)inputValue toValue:(__autoreleasing id *)outputValue ofClass:(__unsafe_unretained Class)outputValueClass error:(NSError *__autoreleasing *)error
 {
     NSArray *matchingTransformers = [self valueTransformersForTransformingFromClass:[inputValue class] toClass:outputValueClass];
-    NSMutableArray *errors;
+	// SPC 2014-12-19 changing this line to the next, silences Analyze warning on 'NSDictionary *userInfo = ' below
+//	NSMutableArray *errors;
+    NSMutableArray *errors = [NSMutableArray new];
     NSError *underlyingError = nil;
     for (id<RKValueTransforming> valueTransformer in matchingTransformers) {
         BOOL success = [valueTransformer transformValue:inputValue toValue:outputValue ofClass:outputValueClass error:&underlyingError];

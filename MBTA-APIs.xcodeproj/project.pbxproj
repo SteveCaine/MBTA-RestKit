@@ -16,7 +16,7 @@
 		8E2A78911A5A5AC600D32316 /* ServiceMBTA.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A78891A5A5AC600D32316 /* ServiceMBTA.m */; };
 		8E2A78921A5A5AC600D32316 /* ServiceMBTA_strings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A788B1A5A5AC600D32316 /* ServiceMBTA_strings.m */; };
 		8E2A78A21A5A5CEA00D32316 /* RKXMLReaderSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A78981A5A5CEA00D32316 /* RKXMLReaderSerialization.m */; };
-		8E2A78A51A5A5CEA00D32316 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A789E1A5A5CEA00D32316 /* XMLReader.m */; };
+		8E2A78A51A5A5CEA00D32316 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A789E1A5A5CEA00D32316 /* XMLReader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8E7EF7A41A5A51E100270944 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EF7A31A5A51E100270944 /* Foundation.framework */; };
 		8E7EF7A61A5A51E100270944 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EF7A51A5A51E100270944 /* CoreGraphics.framework */; };
 		8E7EF7A81A5A51E100270944 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EF7A71A5A51E100270944 /* UIKit.framework */; };
@@ -131,12 +131,12 @@
 		8E2A787B1A5A5AC600D32316 /* MBTA-v2 */ = {
 			isa = PBXGroup;
 			children = (
-				8E2A787C1A5A5AC600D32316 /* Data */,
-				8E2A78851A5A5AC600D32316 /* RestKit */,
 				8E2A78881A5A5AC600D32316 /* ServiceMBTA.h */,
 				8E2A78891A5A5AC600D32316 /* ServiceMBTA.m */,
 				8E2A788A1A5A5AC600D32316 /* ServiceMBTA_strings.h */,
 				8E2A788B1A5A5AC600D32316 /* ServiceMBTA_strings.m */,
+				8E2A78851A5A5AC600D32316 /* RestKit */,
+				8E2A787C1A5A5AC600D32316 /* Data */,
 			);
 			path = "MBTA-v2";
 			sourceTree = "<group>";

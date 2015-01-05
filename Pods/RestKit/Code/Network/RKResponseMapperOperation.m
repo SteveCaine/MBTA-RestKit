@@ -312,6 +312,11 @@ static NSMutableDictionary *RKRegisteredResponseMapperOperationDataSourceClasses
         return;
     }
 
+#if DEBUG_logRawResponse // either JSON or XML
+	NSString *text = [[NSString alloc] initWithData:self.data encoding:NSUTF8StringEncoding];
+	NSLog(@"\n\nraw response = '%@'\n\n", text);
+#endif
+
     // Parse the response
     NSError *error;
     id parsedBody = [self parseResponseData:&error];
