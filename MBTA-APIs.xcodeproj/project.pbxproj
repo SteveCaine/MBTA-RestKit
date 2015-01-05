@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		27105C53A141480ED16EAAF3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2765833CD005827852484FC /* libPods.a */; };
+		8E2A788C1A5A5AC600D32316 /* ApiData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A787E1A5A5AC600D32316 /* ApiData.m */; };
+		8E2A788D1A5A5AC600D32316 /* ApiRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A78801A5A5AC600D32316 /* ApiRoutes.m */; };
+		8E2A788E1A5A5AC600D32316 /* ApiStops.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A78821A5A5AC600D32316 /* ApiStops.m */; };
+		8E2A788F1A5A5AC600D32316 /* ApiTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A78841A5A5AC600D32316 /* ApiTime.m */; };
+		8E2A78901A5A5AC600D32316 /* ServiceMBTA+RestKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A78871A5A5AC600D32316 /* ServiceMBTA+RestKit.m */; };
+		8E2A78911A5A5AC600D32316 /* ServiceMBTA.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A78891A5A5AC600D32316 /* ServiceMBTA.m */; };
+		8E2A78921A5A5AC600D32316 /* ServiceMBTA_strings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A788B1A5A5AC600D32316 /* ServiceMBTA_strings.m */; };
+		8E2A78A21A5A5CEA00D32316 /* RKXMLReaderSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A78981A5A5CEA00D32316 /* RKXMLReaderSerialization.m */; };
+		8E2A78A51A5A5CEA00D32316 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A789E1A5A5CEA00D32316 /* XMLReader.m */; };
 		8E7EF7A41A5A51E100270944 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EF7A31A5A51E100270944 /* Foundation.framework */; };
 		8E7EF7A61A5A51E100270944 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EF7A51A5A51E100270944 /* CoreGraphics.framework */; };
 		8E7EF7A81A5A51E100270944 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EF7A71A5A51E100270944 /* UIKit.framework */; };
@@ -37,6 +46,29 @@
 
 /* Begin PBXFileReference section */
 		1CDB748C7D231FA82C810D53 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8E2A787D1A5A5AC600D32316 /* ApiData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiData.h; sourceTree = "<group>"; };
+		8E2A787E1A5A5AC600D32316 /* ApiData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiData.m; sourceTree = "<group>"; };
+		8E2A787F1A5A5AC600D32316 /* ApiRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiRoutes.h; sourceTree = "<group>"; };
+		8E2A78801A5A5AC600D32316 /* ApiRoutes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiRoutes.m; sourceTree = "<group>"; };
+		8E2A78811A5A5AC600D32316 /* ApiStops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiStops.h; sourceTree = "<group>"; };
+		8E2A78821A5A5AC600D32316 /* ApiStops.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiStops.m; sourceTree = "<group>"; };
+		8E2A78831A5A5AC600D32316 /* ApiTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiTime.h; sourceTree = "<group>"; };
+		8E2A78841A5A5AC600D32316 /* ApiTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiTime.m; sourceTree = "<group>"; };
+		8E2A78861A5A5AC600D32316 /* ServiceMBTA+RestKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ServiceMBTA+RestKit.h"; sourceTree = "<group>"; };
+		8E2A78871A5A5AC600D32316 /* ServiceMBTA+RestKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ServiceMBTA+RestKit.m"; sourceTree = "<group>"; };
+		8E2A78881A5A5AC600D32316 /* ServiceMBTA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceMBTA.h; sourceTree = "<group>"; };
+		8E2A78891A5A5AC600D32316 /* ServiceMBTA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceMBTA.m; sourceTree = "<group>"; };
+		8E2A788A1A5A5AC600D32316 /* ServiceMBTA_strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceMBTA_strings.h; sourceTree = "<group>"; };
+		8E2A788B1A5A5AC600D32316 /* ServiceMBTA_strings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceMBTA_strings.m; sourceTree = "<group>"; };
+		8E2A78951A5A5CEA00D32316 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8E2A78961A5A5CEA00D32316 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		8E2A78971A5A5CEA00D32316 /* RKXMLReaderSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKXMLReaderSerialization.h; sourceTree = "<group>"; };
+		8E2A78981A5A5CEA00D32316 /* RKXMLReaderSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKXMLReaderSerialization.m; sourceTree = "<group>"; };
+		8E2A78991A5A5CEA00D32316 /* RKXMLReaderSerialization.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RKXMLReaderSerialization.podspec; sourceTree = "<group>"; };
+		8E2A789C1A5A5CEA00D32316 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
+		8E2A789D1A5A5CEA00D32316 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		8E2A789E1A5A5CEA00D32316 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		8E2A789F1A5A5CEA00D32316 /* XMLReader.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XMLReader.podspec; sourceTree = "<group>"; };
 		8E7EF7A01A5A51E100270944 /* MBTA-APIs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MBTA-APIs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7EF7A31A5A51E100270944 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8E7EF7A51A5A51E100270944 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,6 +119,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E2A787A1A5A5AC600D32316 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A787B1A5A5AC600D32316 /* MBTA-v2 */,
+				8E2A78931A5A5CEA00D32316 /* RestKit+XMLReader */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8E2A787B1A5A5AC600D32316 /* MBTA-v2 */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A787C1A5A5AC600D32316 /* Data */,
+				8E2A78851A5A5AC600D32316 /* RestKit */,
+				8E2A78881A5A5AC600D32316 /* ServiceMBTA.h */,
+				8E2A78891A5A5AC600D32316 /* ServiceMBTA.m */,
+				8E2A788A1A5A5AC600D32316 /* ServiceMBTA_strings.h */,
+				8E2A788B1A5A5AC600D32316 /* ServiceMBTA_strings.m */,
+			);
+			path = "MBTA-v2";
+			sourceTree = "<group>";
+		};
+		8E2A787C1A5A5AC600D32316 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A787D1A5A5AC600D32316 /* ApiData.h */,
+				8E2A787E1A5A5AC600D32316 /* ApiData.m */,
+				8E2A787F1A5A5AC600D32316 /* ApiRoutes.h */,
+				8E2A78801A5A5AC600D32316 /* ApiRoutes.m */,
+				8E2A78811A5A5AC600D32316 /* ApiStops.h */,
+				8E2A78821A5A5AC600D32316 /* ApiStops.m */,
+				8E2A78831A5A5AC600D32316 /* ApiTime.h */,
+				8E2A78841A5A5AC600D32316 /* ApiTime.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8E2A78851A5A5AC600D32316 /* RestKit */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A78861A5A5AC600D32316 /* ServiceMBTA+RestKit.h */,
+				8E2A78871A5A5AC600D32316 /* ServiceMBTA+RestKit.m */,
+			);
+			path = RestKit;
+			sourceTree = "<group>";
+		};
+		8E2A78931A5A5CEA00D32316 /* RestKit+XMLReader */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A78941A5A5CEA00D32316 /* RKXMLReaderSerialization */,
+				8E2A789A1A5A5CEA00D32316 /* XMLReader */,
+			);
+			path = "RestKit+XMLReader";
+			sourceTree = "<group>";
+		};
+		8E2A78941A5A5CEA00D32316 /* RKXMLReaderSerialization */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A78951A5A5CEA00D32316 /* LICENSE */,
+				8E2A78961A5A5CEA00D32316 /* README.md */,
+				8E2A78971A5A5CEA00D32316 /* RKXMLReaderSerialization.h */,
+				8E2A78981A5A5CEA00D32316 /* RKXMLReaderSerialization.m */,
+				8E2A78991A5A5CEA00D32316 /* RKXMLReaderSerialization.podspec */,
+			);
+			path = RKXMLReaderSerialization;
+			sourceTree = "<group>";
+		};
+		8E2A789A1A5A5CEA00D32316 /* XMLReader */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A789C1A5A5CEA00D32316 /* LICENCE */,
+				8E2A789D1A5A5CEA00D32316 /* XMLReader.h */,
+				8E2A789E1A5A5CEA00D32316 /* XMLReader.m */,
+				8E2A789F1A5A5CEA00D32316 /* XMLReader.podspec */,
+			);
+			path = XMLReader;
+			sourceTree = "<group>";
+		};
 		8E7EF7971A5A51E100270944 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +232,7 @@
 		8E7EF7A91A5A51E100270944 /* MBTA-APIs */ = {
 			isa = PBXGroup;
 			children = (
+				8E2A787A1A5A5AC600D32316 /* Services */,
 				8E7EF7B21A5A51E100270944 /* AppDelegate.h */,
 				8E7EF7B31A5A51E100270944 /* AppDelegate.m */,
 				8E7EF7B51A5A51E100270944 /* Main.storyboard */,
@@ -308,7 +419,16 @@
 				8E7EF7B41A5A51E100270944 /* AppDelegate.m in Sources */,
 				8E7EF7BA1A5A51E100270944 /* MasterViewController.m in Sources */,
 				8E7EF7B01A5A51E100270944 /* main.m in Sources */,
+				8E2A78911A5A5AC600D32316 /* ServiceMBTA.m in Sources */,
+				8E2A78A21A5A5CEA00D32316 /* RKXMLReaderSerialization.m in Sources */,
 				8E7EF7BD1A5A51E100270944 /* DetailViewController.m in Sources */,
+				8E2A788D1A5A5AC600D32316 /* ApiRoutes.m in Sources */,
+				8E2A78901A5A5AC600D32316 /* ServiceMBTA+RestKit.m in Sources */,
+				8E2A78A51A5A5CEA00D32316 /* XMLReader.m in Sources */,
+				8E2A788F1A5A5AC600D32316 /* ApiTime.m in Sources */,
+				8E2A78921A5A5AC600D32316 /* ServiceMBTA_strings.m in Sources */,
+				8E2A788C1A5A5AC600D32316 /* ApiData.m in Sources */,
+				8E2A788E1A5A5AC600D32316 /* ApiStops.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
