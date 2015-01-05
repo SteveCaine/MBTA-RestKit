@@ -1,18 +1,17 @@
 //
-//  main.m
-//  MBTA-APIs
+//	main.m
+//	MBTA-APIs
 //
-//  Created by Steve Caine on 01/05/15.
-//  Copyright (c) 2015 Steve Caine. All rights reserved.
+//	Created by Steve Caine on 01/05/15.
+//	Copyright (c) 2015 Steve Caine. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
 
-int main(int argc, char * argv[])
-{
+int main(int argc, char * argv[]) {
 	@autoreleasepool {
-	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+		return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
 	}
 }
