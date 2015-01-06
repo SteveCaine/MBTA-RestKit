@@ -283,7 +283,7 @@ static CLLocationCoordinate2D test_location  = { +42.373600, -71.118962 };
 			
 		case e_verb_stopsbylocation: {
 			ApiStopsByLocation *stops = (ApiStopsByLocation *)data;
-			text = [NSString stringWithFormat:@"%@ => %d stops", verb, [stops.stops count]];
+			text = [NSString stringWithFormat:@"%@ => %lu stops", verb, (unsigned long)[stops.stops count]];
 		}	break;
 		
 		default:
@@ -307,7 +307,7 @@ static CLLocationCoordinate2D test_location  = { +42.373600, -71.118962 };
 	for (ApiRouteMode *mode in modes) {
 		num_routes += [mode.routes count];
 	}
-	NSString *result = [NSString stringWithFormat:@"%d routes in %d modes", num_routes, [modes count]];
+	NSString *result = [NSString stringWithFormat:@"%lu routes in %lu modes", (unsigned long)num_routes, (unsigned long)[modes count]];
 	return result;
 }
 
@@ -317,7 +317,7 @@ static CLLocationCoordinate2D test_location  = { +42.373600, -71.118962 };
 	for (ApiRouteDirection *direction in directions) {
 		num_stops += [direction.stops count];
 	}
-	NSString *result = [NSString stringWithFormat:@"%d stops in %d directions", num_stops, [directions count]];
+	NSString *result = [NSString stringWithFormat:@"%lu stops in %lu directions", (unsigned long)num_stops, (unsigned long)[directions count]];
 	return result;
 }
 

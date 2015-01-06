@@ -10,6 +10,17 @@
 
 @implementation AppDelegate
 
++ (void)alertForDelegate:(id<UIAlertViewDelegate>)delegate
+				   title:(NSString *)title
+				 message:(NSString *)message {
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+													message:message
+												   delegate:delegate
+										  cancelButtonTitle:@"OK"
+										  otherButtonTitles:nil];
+	[alert show];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
 	return YES;

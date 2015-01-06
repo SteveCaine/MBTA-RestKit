@@ -19,7 +19,7 @@
 
 // ----------------------------------------------------------------------
 extern NSString * const str_BaseURL;
-extern NSString * const key_API;
+extern NSString * const str_key_API;
 
 // ----------------------------------------------------------------------
 

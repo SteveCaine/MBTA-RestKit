@@ -17,6 +17,7 @@
 	NSString * const str_BaseURL	= @"http://realtime.mbta.com/developer/api/v2/";// live API
 	// your private key to the MBTA v2 API is in this file
 	#import "ServiceMBTA_sensitive.h"
+	NSString * const str_key_API = key_MBTA_v2_API;
 #endif
 
 // --------------------------------------------------

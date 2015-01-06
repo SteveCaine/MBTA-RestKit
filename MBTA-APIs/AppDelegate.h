@@ -12,4 +12,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
++ (void)alertForDelegate:(id<UIAlertViewDelegate>)delegate
+				   title:(NSString *)title
+				 message:(NSString *)message;
+
 @end

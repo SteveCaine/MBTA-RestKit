@@ -7,8 +7,9 @@
 //
 
 #import "ServiceMBTA+RestKit.h"
-
 #import "ServiceMBTA_strings.h"
+
+#import "AppDelegate.h"
 
 #if CONFIG_useXML
 #import "RKXMLReaderSerialization.h"
@@ -110,6 +111,12 @@
 	
 	// register mappings with the provider using response descriptors
 	[objectManager addResponseDescriptorsFromArray:[self responseDescriptors]];
+	
+	if ([str_key_API length] == 0) {
+		NSString *title = @"Missing API Key";
+		NSString *message = @"You must provide a valid MBTA API key in “ServiceMBTA_sensitive.h”!";
+		[AppDelegate alertForDelegate:nil title:title message:message];
+	}
 }
 
 // ----------------------------------------------------------------------
