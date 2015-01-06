@@ -1,6 +1,6 @@
 //
 //  ServiceMBTA.h
-//  CoffeeKit
+//  MBTA-APIs
 //
 //	Partial implementation of MBTA v2 API to demonstrate use of RestKit
 //

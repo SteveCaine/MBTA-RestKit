@@ -1,6 +1,6 @@
 //
 //  ServiceMBTA+RestKit.h
-//  CoffeeKit
+//  MBTA-APIs
 //
 //  Created by Steve Caine on 12/30/14.
 //  Copyright (c) 2014 Steve Caine. All rights reserved.
