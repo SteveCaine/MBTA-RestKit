@@ -80,18 +80,14 @@
 #define key_distance				@"distance"
 
 // --------------------------------------------------
-// map verbs/replys to enums
+// map verbs to enums
 
 typedef enum api_verbs {
 	e_verb_servertime,
 	e_verb_routes,
-	e_verb_routesbystop
+	e_verb_routesbystop,
+	e_verb_stopsbyroute,
+	e_verb_stopsbylocation
 } api_verb;
-
-typedef enum api_replys {
-	e_reply_servertime,
-	e_reply_routes,
-	e_reply_routesbystop
-} api_reply;
 
 // --------------------------------------------------

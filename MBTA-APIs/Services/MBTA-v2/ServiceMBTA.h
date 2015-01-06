@@ -27,7 +27,7 @@ extern NSString * const key_API;
 
 + (NSUInteger)verbCount;
 + (NSString *)verbForIndex:(NSUInteger)index;
-//+ (NSUInteger)indexForVerb:(NSString *)verb;
++ (NSUInteger)indexForVerb:(NSString *)verb;
 
 // ----------------------------------------------------------------------
 
