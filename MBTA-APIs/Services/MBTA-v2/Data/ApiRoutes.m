@@ -22,7 +22,7 @@
 	if ([self.stops count]) {
 		int index = 0;
 		for (ApiStop *stop in self.stops) {
-			NSString *stop_order = ([stop.order isKindOfClass:[NSNumber class]]	? [NSString stringWithFormat:@"%2i", [stop.order integerValue]] : [stop.order description]);
+			NSString *stop_order = ([stop.order isKindOfClass:[NSNumber class]]	? [NSString stringWithFormat:@"%2li", (long)[stop.order integerValue]] : [stop.order description]);
 			[result appendFormat:@"\n\t%2i: %@: stop %@ (%@) is at %f, %f (lat/lon)", index++, stop_order, stop.ID, stop.name, [stop location].latitude, [stop location].longitude];
 		}
 	}
@@ -60,7 +60,7 @@
 	if ([self.directions count]) {
 		int index = 0;
 		for (ApiRouteDirection *direction in self.directions) {
-			[result appendFormat:@"\n\t%2i: direction '%@' has %d stops", index++, direction.name, [direction.stops count]];
+			[result appendFormat:@"\n\t%2i: direction '%@' has %lu stops", index++, direction.name, (unsigned long)[direction.stops count]];
 		}
 	}
 	return result;

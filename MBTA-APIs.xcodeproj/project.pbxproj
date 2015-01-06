@@ -90,6 +90,7 @@
 		8E7EF7CD1A5A51E100270944 /* MBTA-APIsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBTA-APIsTests-Info.plist"; sourceTree = "<group>"; };
 		8E7EF7CF1A5A51E100270944 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E7EF7D11A5A51E100270944 /* MBTA_APIsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBTA_APIsTests.m; sourceTree = "<group>"; };
+		8EA10A4E1A5B538100DDFFAC /* ServiceMBTA_sensitive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceMBTA_sensitive.h; sourceTree = "<group>"; };
 		A2765833CD005827852484FC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A961C99E0BC3691C858140F3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +136,7 @@
 				8E2A78891A5A5AC600D32316 /* ServiceMBTA.m */,
 				8E2A788A1A5A5AC600D32316 /* ServiceMBTA_strings.h */,
 				8E2A788B1A5A5AC600D32316 /* ServiceMBTA_strings.m */,
+				8EA10A4E1A5B538100DDFFAC /* ServiceMBTA_sensitive.h */,
 				8E2A78851A5A5AC600D32316 /* RestKit */,
 				8E2A787C1A5A5AC600D32316 /* Data */,
 			);
