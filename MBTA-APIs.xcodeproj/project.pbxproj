@@ -46,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		1CDB748C7D231FA82C810D53 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8E1E14BA1A5C6A6600EAADA1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8E2A787D1A5A5AC600D32316 /* ApiData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiData.h; sourceTree = "<group>"; };
 		8E2A787E1A5A5AC600D32316 /* ApiData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiData.m; sourceTree = "<group>"; };
 		8E2A787F1A5A5AC600D32316 /* ApiRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiRoutes.h; sourceTree = "<group>"; };
@@ -202,6 +203,7 @@
 		8E7EF7971A5A51E100270944 = {
 			isa = PBXGroup;
 			children = (
+				8E1E14BA1A5C6A6600EAADA1 /* README.md */,
 				8E7EF7A91A5A51E100270944 /* MBTA-APIs */,
 				8E7EF7CB1A5A51E100270944 /* MBTA-APIsTests */,
 				8E7EF7A21A5A51E100270944 /* Frameworks */,
