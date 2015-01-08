@@ -32,6 +32,7 @@
 		8E7EF7C81A5A51E100270944 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EF7A71A5A51E100270944 /* UIKit.framework */; };
 		8E7EF7D01A5A51E100270944 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E7EF7CE1A5A51E100270944 /* InfoPlist.strings */; };
 		8E7EF7D21A5A51E100270944 /* MBTA_APIsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7EF7D11A5A51E100270944 /* MBTA_APIsTests.m */; };
+		8EB086EA1A5F07990095FEE6 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB086E91A5F07990095FEE6 /* EXTScope.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,9 @@
 		8E7EF7CF1A5A51E100270944 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E7EF7D11A5A51E100270944 /* MBTA_APIsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBTA_APIsTests.m; sourceTree = "<group>"; };
 		8EA10A4E1A5B538100DDFFAC /* ServiceMBTA_sensitive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceMBTA_sensitive.h; sourceTree = "<group>"; };
+		8EB086E81A5F07990095FEE6 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
+		8EB086E91A5F07990095FEE6 /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
+		8EB086EB1A5F08BF0095FEE6 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		A2765833CD005827852484FC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A961C99E0BC3691C858140F3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -208,6 +212,7 @@
 				8E1E14BA1A5C6A6600EAADA1 /* README.md */,
 				8E7EF7A91A5A51E100270944 /* MBTA-APIs */,
 				8E7EF7CB1A5A51E100270944 /* MBTA-APIsTests */,
+				8EB086E71A5F07990095FEE6 /* xtras */,
 				8E7EF7A21A5A51E100270944 /* Frameworks */,
 				8E7EF7A11A5A51E100270944 /* Products */,
 				E3F192C578B1F4E4FB07C8B4 /* Pods */,
@@ -279,6 +284,16 @@
 				8E7EF7CE1A5A51E100270944 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EB086E71A5F07990095FEE6 /* xtras */ = {
+			isa = PBXGroup;
+			children = (
+				8EB086EB1A5F08BF0095FEE6 /* metamacros.h */,
+				8EB086E81A5F07990095FEE6 /* EXTScope.h */,
+				8EB086E91A5F07990095FEE6 /* EXTScope.m */,
+			);
+			path = xtras;
 			sourceTree = "<group>";
 		};
 		E3F192C578B1F4E4FB07C8B4 /* Pods */ = {
@@ -432,6 +447,7 @@
 				8E2A788D1A5A5AC600D32316 /* ApiRoutes.m in Sources */,
 				8E2A78901A5A5AC600D32316 /* ServiceMBTA+RestKit.m in Sources */,
 				8E2A788F1A5A5AC600D32316 /* ApiTime.m in Sources */,
+				8EB086EA1A5F07990095FEE6 /* EXTScope.m in Sources */,
 				8E2A78921A5A5AC600D32316 /* ServiceMBTA_strings.m in Sources */,
 				8E2A788C1A5A5AC600D32316 /* ApiData.m in Sources */,
 				8E2A788E1A5A5AC600D32316 /* ApiStops.m in Sources */,

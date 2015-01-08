@@ -21,6 +21,9 @@
 
 #import <RestKit/RestKit.h>
 
+// for sake of completeness, use weak/strong-self pattern inside blocks
+#import "EXTScope.h"
+
 static NSString *str_sequeID_DetailViewController = @"showDetail";
 //static NSString *str_sequeID_DetailViewController = @"showResponse";
 
@@ -47,21 +50,27 @@ static CLLocationCoordinate2D test_location  = { +42.373600, -71.118962 };
 
 //	http://realtime.mbta.com/developer/api/v2/servertime?api_key=<myKey>&format=[json/xml]
 - (void)get_servertime {
+	@weakify(self)
 	[ApiTime get_success:^(ApiTime *servertime) {
 		NSLog(@"\n\n%s servertime = %@\n\n", __FUNCTION__, servertime);
+		@strongify(self)
 		[self show_success:servertime verb:verb_servertime];
 	} failure:^(NSError *error) {
 		NSLog(@"\n\n%s API call failed: %@", __FUNCTION__, [error localizedDescription]);
+		@strongify(self)
 		[self show_failure_verb:verb_servertime];
 	}];
 }
 
 //	http://realtime.mbta.com/developer/api/v2/routes?api_key=<myKey>&format=[json/xml]
 - (void)get_routes {
+	@weakify(self)
 	[ApiRoutes get_success:^(ApiRoutes *routes) {
+		@strongify(self)
 		NSLog(@"\n\n%s routes = %@\n\n", __FUNCTION__, routes);
 		[self show_success:routes verb:verb_routes];
 	} failure:^(NSError *error) {
+		@strongify(self)
 		NSLog(@"\n\n%s API call failed: %@", __FUNCTION__, [error localizedDescription]);
 		[self show_failure_verb:verb_routes];
 	}];
@@ -70,10 +79,13 @@ static CLLocationCoordinate2D test_location  = { +42.373600, -71.118962 };
 //	http://realtime.mbta.com/developer/api/v2/routesbystop?stop=<stop_id>&api_key=<myKey>&format=[json/xml]
 - (void)get_routesbystop {
 	NSString *stopID = test_stopID;
+	@weakify(self)
 	[ApiRoutesByStop get4stopID:stopID success:^(ApiRoutesByStop *routes) {
+		@strongify(self)
 		NSLog(@"\n\n%s routes = %@\n\n", __FUNCTION__, routes);
 		[self show_success:routes verb:verb_routesbystop];
 	} failure:^(NSError *error) {
+		@strongify(self)
 		NSLog(@"\n\n%s API call failed: %@", __FUNCTION__, [error localizedDescription]);
 		[self show_failure_verb:verb_routesbystop];
 	}];
@@ -83,28 +95,35 @@ static CLLocationCoordinate2D test_location  = { +42.373600, -71.118962 };
 - (void)get_stopsbyroute {
 #if CONFIG_stops_update_route
 	// we get an ApiRoute object, then update it with its stops
+	@weakify(self)
 	[ApiRoutes get_success:^(ApiRoutes *routes) {
+		@strongify(self)
 		if (routes) {
 			ApiRoute *route = [routes routeByID:test_routeID];
 			if (route) {
+				@weakify(self)
 				[route addStops_success:^(ApiRoute *route) {
+					@strongify(self)
 					NSLog(@"\n\n%s %@\n\n", __FUNCTION__, route);
 					[self show_success:route verb:verb_stopsbyroute];
 				} failure:^(NSError *error) {
+					@strongify(self)
 					NSLog(@"\n\n%s API call failed: %@", __FUNCTION__, [error localizedDescription]);
 					[self show_failure_verb:verb_stopsbyroute];
 				}];
 			}
 		}
 	} failure:^(NSError *error) {
+		@strongify(self)
 		NSLog(@"\n\n%s API call failed: %@", __FUNCTION__, [error localizedDescription]);
 		[self show_failure_verb:verb_stopsbyroute];
 	}];
 #else
 	// we get an ApiStopsByRoute object directly
 	NSString *routeID = test_routeID;
-	
+	@weakify(self)
 	[ApiStopsByRoute get4route:routeID success:^(ApiStopsByRoute *data) {
+		@strongify(self)
 		NSLog(@"\n\n%s success:", __FUNCTION__);
 		NSUInteger i = 0;
 		for (ApiRouteDirection *direction in data.directions) {
@@ -112,6 +131,7 @@ static CLLocationCoordinate2D test_location  = { +42.373600, -71.118962 };
 		}
 		[self show_success:data verb:verb_stopsbyroute];
 	} failure:^(NSError *error) {
+		@strongify(self)
 		NSLog(@"\n\n%s API call failed: %@", __FUNCTION__, [error localizedDescription]);
 		[self show_failure_verb:verb_stopsbyroute];
 	}];
@@ -121,11 +141,13 @@ static CLLocationCoordinate2D test_location  = { +42.373600, -71.118962 };
 //	http://realtime.mbta.com/developer/api/v2/stopsbylocation?lat=<latitude>&lon=<longitude>&api_key=<myKey>&format=[json/xml]
 - (void)get_stopsbylocation {
 	CLLocationCoordinate2D location = test_location;
-	
+	@weakify(self)
 	[ApiStopsByLocation get4location:location success:^(ApiStopsByLocation *data) {
+		@strongify(self)
 		NSLog(@"\n\n%s stops = %@\n\n", __FUNCTION__, data);
 		[self show_success:data verb:verb_stopsbylocation];
 	} failure:^(NSError *error) {
+		@strongify(self)
 		NSLog(@"\n\n%s API call failed: %@", __FUNCTION__, [error localizedDescription]);
 		[self show_failure_verb:verb_stopsbylocation];
 	}];
@@ -148,6 +170,11 @@ static CLLocationCoordinate2D test_location  = { +42.373600, -71.118962 };
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
 	// Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc {
+	// cancel any pending 'performSelector' calls as we go away
+	[NSObject cancelPreviousPerformRequestsWithTarget:self];
 }
 
 // ----------------------------------------------------------------------
@@ -340,8 +367,6 @@ static CLLocationCoordinate2D test_location  = { +42.373600, -71.118962 };
 				}
 				// wait awhile, then go back to original state
 				[self performSelector:@selector(resetForVerb:) withObject:verb afterDelay:3.0];
-			}
-			else {
 			}
 		}
 	}
