@@ -22,7 +22,7 @@
 // --------------------------------------------------
 
 #define CONFIG_useXML				0
-#define CONFIG_stops_update_route	1
+#define CONFIG_stops_update_route	0
 
 // --------------------------------------------------
 #pragma mark - DEBUG

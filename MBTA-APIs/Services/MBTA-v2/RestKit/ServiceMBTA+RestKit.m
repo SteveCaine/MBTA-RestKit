@@ -114,7 +114,7 @@
 	
 	if ([str_key_API length] == 0) {
 		NSString *title = @"Missing API Key";
-		NSString *message = @"You must provide a valid MBTA API key in “ServiceMBTA_sensitive.h”!";
+		NSString *message = @"You must provide a valid MBTA API key at the top of “ServiceMBTA.m”!";
 		[AppDelegate alertForDelegate:nil title:title message:message];
 	}
 }

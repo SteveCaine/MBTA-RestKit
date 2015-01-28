@@ -10,15 +10,8 @@
 
 #import "ServiceMBTA_strings.h"
 
-#if 0
-	NSString * const str_BaseURL	= @"http://54.81.189.97/developer/api/v2/";		// test API
-	#define key_MBTA_v2_API			  @"wX9NwuHnZU2ToO7GmGR9uw";					// test dev key
-#else
-	NSString * const str_BaseURL	= @"http://realtime.mbta.com/developer/api/v2/";// live API
-	// your private key to the MBTA v2 API is in this file
-	#import "ServiceMBTA_sensitive.h"
-	NSString * const str_key_API = key_MBTA_v2_API;
-#endif
+NSString * const str_BaseURL = @"http://realtime.mbta.com/developer/api/v2/";
+NSString * const str_key_API = @"wX9NwuHnZU2ToO7GmGR9uw";
 
 // --------------------------------------------------
 // see "ServiceMBTA_strings.h" for list of #define's for each verb
@@ -143,7 +136,7 @@ static NSUInteger num_xml_replys = sizeof(xml_replys)/sizeof(xml_replys[0]);
 	static NSDictionary *result;
 	if (result == nil) {
 		result = @{
-				   param_api_key: key_MBTA_v2_API,
+				   param_api_key: str_key_API,
 #if CONFIG_useXML
 				   param_format	: @"xml"
 #else
@@ -151,10 +144,6 @@ static NSUInteger num_xml_replys = sizeof(xml_replys)/sizeof(xml_replys[0]);
 #endif
 				   };
 	}
-	// NOTE: Since this code on GitHub does NOT include an API key,
-	// but instead users must supply their own PRIVATE key,
-	// we check here for the oft-likely case that no key has been provided.
-	NSAssert([[result objectForKey:param_api_key] length] != 0, @"Missing/invalid API key.");
 	return result;
 }
 

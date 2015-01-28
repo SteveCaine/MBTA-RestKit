@@ -127,7 +127,7 @@ static CLLocationCoordinate2D test_location  = { +42.373600, -71.118962 };
 		NSLog(@"\n\n%s success:", __FUNCTION__);
 		NSUInteger i = 0;
 		for (ApiRouteDirection *direction in data.directions) {
-			NSLog(@"%2i, %@", i++, direction);
+			NSLog(@"%2lu, %@", (unsigned long)i++, direction);
 		}
 		[self show_success:data verb:verb_stopsbyroute];
 	} failure:^(NSError *error) {
