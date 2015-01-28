@@ -11,6 +11,8 @@
 #import "ServiceMBTA_strings.h"
 
 NSString * const str_BaseURL = @"http://realtime.mbta.com/developer/api/v2/";
+
+#warning TEST KEY FOR DEVELOPERS, DO NOT USE IN PRODUCTION CODE!
 NSString * const str_key_API = @"wX9NwuHnZU2ToO7GmGR9uw";
 
 // --------------------------------------------------
