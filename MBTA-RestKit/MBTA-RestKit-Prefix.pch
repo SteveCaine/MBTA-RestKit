@@ -32,10 +32,14 @@
 #define DEBUG_logHeadersHTTP		0
 #endif
 
-// this needs to be in the 'Pods' Xcode project, specifically in file
-//		./Pods/Target Support Files/Pods-RestKit/Pods-RestKit-prefix.pch
+// to write the raw JSON/XML response to NSLog, set this flag
+//
+//	#ifdef DEBUG
+//	#define DEBUG_logRawResponse	1
+//	#endif
+//
+// in the 'Pods' Xcode project, specifically in the file
+//		./Pods/RestKit/Support Files/Pods-RestKit-prefix.pch
 // the added code it controls is in
-//		./Pods/RestKit/Code/Network/RKResponseMapperOperation.m main()
-//#ifdef DEBUG
-//#define DEBUG_logRawResponse	1
-//#endif
+//		./Pods/RestKit/Network/RKResponseMapperOperation.m main()
+// (Also note, these are paths in the Xcode project, *not* in the OS X file system!)

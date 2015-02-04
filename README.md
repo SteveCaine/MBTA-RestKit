@@ -1,5 +1,5 @@
-MBTA-APIs
-=========
+MBTA-RestKit
+============
 
 This repository contains code that demonstrates how to access the Boston MBTA's new [RESTful web service](http://www.mbta.com/rider_tools/developers/) for information about the public transit agency's routes and services.
 

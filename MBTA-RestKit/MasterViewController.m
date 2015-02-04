@@ -357,25 +357,34 @@ static CLLocationCoordinate2D test_location  = { +42.373600, -71.118962 };
 			NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
 			UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
 			
-			if ([text length]) {
-				cell.detailTextLabel.text = text;
-				
-				UIView *accessoryView = cell.accessoryView;
-				if ([accessoryView isKindOfClass:[UIActivityIndicatorView class]]) {
-					UIActivityIndicatorView *spinner = (UIActivityIndicatorView *)accessoryView;
-					[spinner stopAnimating];
-				}
-				// wait awhile, then go back to original state
-				[self performSelector:@selector(resetForVerb:) withObject:verb afterDelay:3.0];
+			// flash cell briefly to indicate response has arrived
+			[cell setSelected:YES animated:YES];
+			[cell setSelected: NO animated:YES];
+			
+			// stop spinner
+			UIView *accessoryView = cell.accessoryView;
+			if ([accessoryView isKindOfClass:[UIActivityIndicatorView class]]) {
+				UIActivityIndicatorView *spinner = (UIActivityIndicatorView *)accessoryView;
+				[spinner stopAnimating];
 			}
+			
+			// show success/failure (even empty text string)
+//			if ([text length]) {
+				cell.detailTextLabel.text = text;
+//			}
+			
+			// cancel any previously posted 'reset' calls
+			[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(resetForIndexPath:) object:indexPath];
+			
+			// wait awhile, then go back to original state
+			[self performSelector:@selector(resetForIndexPath:) withObject:indexPath afterDelay:3.0];
 		}
 	}
 }
 
-- (void)resetForVerb:(NSString *)verb {
-	NSUInteger row = [ServiceMBTA indexForVerb:verb];
+- (void)resetForIndexPath:(NSIndexPath *)indexPath {
+	NSUInteger row = indexPath.row;
 	if (row < [ServiceMBTA verbCount]) { // get NSNotFound for unknown verb
-		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
 		UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
 		cell.detailTextLabel.text = @"idle";
 	}
