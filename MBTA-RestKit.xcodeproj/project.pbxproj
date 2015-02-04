@@ -72,14 +72,14 @@
 		8E7EDC401A5C7EBC00C5A89F /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		8E7EDC411A5C7EBC00C5A89F /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		8E7EDC421A5C7EBC00C5A89F /* XMLReader.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XMLReader.podspec; sourceTree = "<group>"; };
-		8E7EF7A01A5A51E100270944 /* MBTA-APIs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MBTA-APIs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7EF7A01A5A51E100270944 /* MBTA-RestKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MBTA-RestKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7EF7A31A5A51E100270944 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8E7EF7A51A5A51E100270944 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8E7EF7A71A5A51E100270944 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		8E7EF7AB1A5A51E100270944 /* MBTA-APIs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBTA-APIs-Info.plist"; sourceTree = "<group>"; };
+		8E7EF7AB1A5A51E100270944 /* MBTA-RestKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBTA-RestKit-Info.plist"; sourceTree = "<group>"; };
 		8E7EF7AD1A5A51E100270944 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E7EF7AF1A5A51E100270944 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8E7EF7B11A5A51E100270944 /* MBTA-APIs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBTA-APIs-Prefix.pch"; sourceTree = "<group>"; };
+		8E7EF7B11A5A51E100270944 /* MBTA-RestKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBTA-RestKit-Prefix.pch"; sourceTree = "<group>"; };
 		8E7EF7B21A5A51E100270944 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8E7EF7B31A5A51E100270944 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8E7EF7B61A5A51E100270944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,9 +88,9 @@
 		8E7EF7BB1A5A51E100270944 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		8E7EF7BC1A5A51E100270944 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		8E7EF7BE1A5A51E100270944 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8E7EF7C41A5A51E100270944 /* MBTA-APIsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MBTA-APIsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7EF7C41A5A51E100270944 /* MBTA-RestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MBTA-RestKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7EF7C51A5A51E100270944 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		8E7EF7CD1A5A51E100270944 /* MBTA-APIsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBTA-APIsTests-Info.plist"; sourceTree = "<group>"; };
+		8E7EF7CD1A5A51E100270944 /* MBTA-RestKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBTA-RestKitTests-Info.plist"; sourceTree = "<group>"; };
 		8E7EF7CF1A5A51E100270944 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E7EF7D11A5A51E100270944 /* MBTA_APIsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBTA_APIsTests.m; sourceTree = "<group>"; };
 		8EB086E81A5F07990095FEE6 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
@@ -220,8 +220,8 @@
 		8E7EF7A11A5A51E100270944 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E7EF7A01A5A51E100270944 /* MBTA-APIs.app */,
-				8E7EF7C41A5A51E100270944 /* MBTA-APIsTests.xctest */,
+				8E7EF7A01A5A51E100270944 /* MBTA-RestKit.app */,
+				8E7EF7C41A5A51E100270944 /* MBTA-RestKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,10 +258,10 @@
 		8E7EF7AA1A5A51E100270944 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8E7EF7AB1A5A51E100270944 /* MBTA-APIs-Info.plist */,
+				8E7EF7AB1A5A51E100270944 /* MBTA-RestKit-Info.plist */,
 				8E7EF7AC1A5A51E100270944 /* InfoPlist.strings */,
 				8E7EF7AF1A5A51E100270944 /* main.m */,
-				8E7EF7B11A5A51E100270944 /* MBTA-APIs-Prefix.pch */,
+				8E7EF7B11A5A51E100270944 /* MBTA-RestKit-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -278,7 +278,7 @@
 		8E7EF7CC1A5A51E100270944 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8E7EF7CD1A5A51E100270944 /* MBTA-APIsTests-Info.plist */,
+				8E7EF7CD1A5A51E100270944 /* MBTA-RestKitTests-Info.plist */,
 				8E7EF7CE1A5A51E100270944 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -306,9 +306,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8E7EF79F1A5A51E100270944 /* MBTA-APIs */ = {
+		8E7EF79F1A5A51E100270944 /* MBTA-RestKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E7EF7D51A5A51E100270944 /* Build configuration list for PBXNativeTarget "MBTA-APIs" */;
+			buildConfigurationList = 8E7EF7D51A5A51E100270944 /* Build configuration list for PBXNativeTarget "MBTA-RestKit" */;
 			buildPhases = (
 				DC9EAE413DDB1EF84F8FC63B /* Check Pods Manifest.lock */,
 				8E7EF79C1A5A51E100270944 /* Sources */,
@@ -320,14 +320,14 @@
 			);
 			dependencies = (
 			);
-			name = "MBTA-APIs";
+			name = "MBTA-RestKit";
 			productName = "MBTA-APIs";
-			productReference = 8E7EF7A01A5A51E100270944 /* MBTA-APIs.app */;
+			productReference = 8E7EF7A01A5A51E100270944 /* MBTA-RestKit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8E7EF7C31A5A51E100270944 /* MBTA-APIsTests */ = {
+		8E7EF7C31A5A51E100270944 /* MBTA-RestKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E7EF7D81A5A51E100270944 /* Build configuration list for PBXNativeTarget "MBTA-APIsTests" */;
+			buildConfigurationList = 8E7EF7D81A5A51E100270944 /* Build configuration list for PBXNativeTarget "MBTA-RestKitTests" */;
 			buildPhases = (
 				8E7EF7C01A5A51E100270944 /* Sources */,
 				8E7EF7C11A5A51E100270944 /* Frameworks */,
@@ -338,9 +338,9 @@
 			dependencies = (
 				8E7EF7CA1A5A51E100270944 /* PBXTargetDependency */,
 			);
-			name = "MBTA-APIsTests";
+			name = "MBTA-RestKitTests";
 			productName = "MBTA-APIsTests";
-			productReference = 8E7EF7C41A5A51E100270944 /* MBTA-APIsTests.xctest */;
+			productReference = 8E7EF7C41A5A51E100270944 /* MBTA-RestKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -357,7 +357,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8E7EF79B1A5A51E100270944 /* Build configuration list for PBXProject "MBTA-APIs" */;
+			buildConfigurationList = 8E7EF79B1A5A51E100270944 /* Build configuration list for PBXProject "MBTA-RestKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -370,8 +370,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8E7EF79F1A5A51E100270944 /* MBTA-APIs */,
-				8E7EF7C31A5A51E100270944 /* MBTA-APIsTests */,
+				8E7EF79F1A5A51E100270944 /* MBTA-RestKit */,
+				8E7EF7C31A5A51E100270944 /* MBTA-RestKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -465,7 +465,7 @@
 /* Begin PBXTargetDependency section */
 		8E7EF7CA1A5A51E100270944 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8E7EF79F1A5A51E100270944 /* MBTA-APIs */;
+			target = 8E7EF79F1A5A51E100270944 /* MBTA-RestKit */;
 			targetProxy = 8E7EF7C91A5A51E100270944 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -575,9 +575,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MBTA-APIs/MBTA-APIs-Prefix.pch";
-				INFOPLIST_FILE = "MBTA-APIs/MBTA-APIs-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MBTA-APIs/MBTA-RestKit-Prefix.pch";
+				INFOPLIST_FILE = "MBTA-APIs/MBTA-RestKit-Info.plist";
+				PRODUCT_NAME = "MBTA-RestKit";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -589,9 +589,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MBTA-APIs/MBTA-APIs-Prefix.pch";
-				INFOPLIST_FILE = "MBTA-APIs/MBTA-APIs-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MBTA-APIs/MBTA-RestKit-Prefix.pch";
+				INFOPLIST_FILE = "MBTA-APIs/MBTA-RestKit-Info.plist";
+				PRODUCT_NAME = "MBTA-RestKit";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -611,8 +611,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MBTA-APIsTests/MBTA-APIsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MBTA-APIsTests/MBTA-RestKitTests-Info.plist";
+				PRODUCT_NAME = "MBTA-RestKitTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -629,8 +629,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MBTA-APIs/MBTA-APIs-Prefix.pch";
-				INFOPLIST_FILE = "MBTA-APIsTests/MBTA-APIsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MBTA-APIsTests/MBTA-RestKitTests-Info.plist";
+				PRODUCT_NAME = "MBTA-RestKitTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -639,7 +639,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8E7EF79B1A5A51E100270944 /* Build configuration list for PBXProject "MBTA-APIs" */ = {
+		8E7EF79B1A5A51E100270944 /* Build configuration list for PBXProject "MBTA-RestKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E7EF7D31A5A51E100270944 /* Debug */,
@@ -648,7 +648,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E7EF7D51A5A51E100270944 /* Build configuration list for PBXNativeTarget "MBTA-APIs" */ = {
+		8E7EF7D51A5A51E100270944 /* Build configuration list for PBXNativeTarget "MBTA-RestKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E7EF7D61A5A51E100270944 /* Debug */,
@@ -657,7 +657,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E7EF7D81A5A51E100270944 /* Build configuration list for PBXNativeTarget "MBTA-APIsTests" */ = {
+		8E7EF7D81A5A51E100270944 /* Build configuration list for PBXNativeTarget "MBTA-RestKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E7EF7D91A5A51E100270944 /* Debug */,
