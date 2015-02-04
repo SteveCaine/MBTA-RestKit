@@ -31,7 +31,7 @@
 		8E7EF7C71A5A51E100270944 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EF7A31A5A51E100270944 /* Foundation.framework */; };
 		8E7EF7C81A5A51E100270944 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EF7A71A5A51E100270944 /* UIKit.framework */; };
 		8E7EF7D01A5A51E100270944 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E7EF7CE1A5A51E100270944 /* InfoPlist.strings */; };
-		8E7EF7D21A5A51E100270944 /* MBTA_APIsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7EF7D11A5A51E100270944 /* MBTA_APIsTests.m */; };
+		8E7EF7D21A5A51E100270944 /* MBTA_RestKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7EF7D11A5A51E100270944 /* MBTA_RestKitTests.m */; };
 		8EB086EA1A5F07990095FEE6 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB086E91A5F07990095FEE6 /* EXTScope.m */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1CDB748C7D231FA82C810D53 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8E1E14BA1A5C6A6600EAADA1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8E2A787D1A5A5AC600D32316 /* ApiData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiData.h; sourceTree = "<group>"; };
 		8E2A787E1A5A5AC600D32316 /* ApiData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiData.m; sourceTree = "<group>"; };
@@ -92,12 +91,11 @@
 		8E7EF7C51A5A51E100270944 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8E7EF7CD1A5A51E100270944 /* MBTA-RestKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBTA-RestKitTests-Info.plist"; sourceTree = "<group>"; };
 		8E7EF7CF1A5A51E100270944 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8E7EF7D11A5A51E100270944 /* MBTA_APIsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBTA_APIsTests.m; sourceTree = "<group>"; };
+		8E7EF7D11A5A51E100270944 /* MBTA_RestKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBTA_RestKitTests.m; sourceTree = "<group>"; };
 		8EB086E81A5F07990095FEE6 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		8EB086E91A5F07990095FEE6 /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
 		8EB086EB1A5F08BF0095FEE6 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		A2765833CD005827852484FC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A961C99E0BC3691C858140F3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,12 +206,11 @@
 			isa = PBXGroup;
 			children = (
 				8E1E14BA1A5C6A6600EAADA1 /* README.md */,
-				8E7EF7A91A5A51E100270944 /* MBTA-APIs */,
+				8E7EF7A91A5A51E100270944 /* MBTA-RestKit */,
 				8E7EF7CB1A5A51E100270944 /* MBTA-APIsTests */,
 				8EB086E71A5F07990095FEE6 /* xtras */,
 				8E7EF7A21A5A51E100270944 /* Frameworks */,
 				8E7EF7A11A5A51E100270944 /* Products */,
-				E3F192C578B1F4E4FB07C8B4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,7 +235,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8E7EF7A91A5A51E100270944 /* MBTA-APIs */ = {
+		8E7EF7A91A5A51E100270944 /* MBTA-RestKit */ = {
 			isa = PBXGroup;
 			children = (
 				8E2A787A1A5A5AC600D32316 /* Services */,
@@ -252,7 +249,7 @@
 				8E7EF7BE1A5A51E100270944 /* Images.xcassets */,
 				8E7EF7AA1A5A51E100270944 /* Supporting Files */,
 			);
-			path = "MBTA-APIs";
+			path = "MBTA-RestKit";
 			sourceTree = "<group>";
 		};
 		8E7EF7AA1A5A51E100270944 /* Supporting Files */ = {
@@ -269,10 +266,11 @@
 		8E7EF7CB1A5A51E100270944 /* MBTA-APIsTests */ = {
 			isa = PBXGroup;
 			children = (
-				8E7EF7D11A5A51E100270944 /* MBTA_APIsTests.m */,
+				8E7EF7D11A5A51E100270944 /* MBTA_RestKitTests.m */,
 				8E7EF7CC1A5A51E100270944 /* Supporting Files */,
 			);
-			path = "MBTA-APIsTests";
+			name = "MBTA-APIsTests";
+			path = "MBTA-RestKitTests";
 			sourceTree = "<group>";
 		};
 		8E7EF7CC1A5A51E100270944 /* Supporting Files */ = {
@@ -292,15 +290,6 @@
 				8EB086E91A5F07990095FEE6 /* EXTScope.m */,
 			);
 			path = xtras;
-			sourceTree = "<group>";
-		};
-		E3F192C578B1F4E4FB07C8B4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A961C99E0BC3691C858140F3 /* Pods.debug.xcconfig */,
-				1CDB748C7D231FA82C810D53 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,7 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E7EF7D21A5A51E100270944 /* MBTA_APIsTests.m in Sources */,
+				8E7EF7D21A5A51E100270944 /* MBTA_RestKitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,13 +559,12 @@
 		};
 		8E7EF7D61A5A51E100270944 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A961C99E0BC3691C858140F3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MBTA-APIs/MBTA-RestKit-Prefix.pch";
-				INFOPLIST_FILE = "MBTA-APIs/MBTA-RestKit-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MBTA-RestKit/MBTA-RestKit-Info.plist";
 				PRODUCT_NAME = "MBTA-RestKit";
 				WRAPPER_EXTENSION = app;
 			};
@@ -584,13 +572,12 @@
 		};
 		8E7EF7D71A5A51E100270944 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CDB748C7D231FA82C810D53 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MBTA-APIs/MBTA-RestKit-Prefix.pch";
-				INFOPLIST_FILE = "MBTA-APIs/MBTA-RestKit-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MBTA-RestKit/MBTA-RestKit-Info.plist";
 				PRODUCT_NAME = "MBTA-RestKit";
 				WRAPPER_EXTENSION = app;
 			};
@@ -611,7 +598,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MBTA-APIsTests/MBTA-RestKitTests-Info.plist";
+				INFOPLIST_FILE = "MBTA-RestKitTests/MBTA-RestKitTests-Info.plist";
 				PRODUCT_NAME = "MBTA-RestKitTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -629,7 +616,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MBTA-APIs/MBTA-APIs-Prefix.pch";
-				INFOPLIST_FILE = "MBTA-APIsTests/MBTA-RestKitTests-Info.plist";
+				INFOPLIST_FILE = "MBTA-RestKitTests/MBTA-RestKitTests-Info.plist";
 				PRODUCT_NAME = "MBTA-RestKitTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
