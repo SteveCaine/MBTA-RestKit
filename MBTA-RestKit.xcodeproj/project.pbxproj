@@ -607,7 +607,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MBTA-APIs/MBTA-APIs-Prefix.pch";
+				GCC_PREFIX_HEADER = "MBTA-RestKit/MBTA-RestKit-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -629,7 +629,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MBTA-APIs/MBTA-APIs-Prefix.pch";
+				GCC_PREFIX_HEADER = "MBTA-RestKit/MBTA-RestKit-Prefix.pch";
 				INFOPLIST_FILE = "MBTA-RestKitTests/MBTA-RestKitTests-Info.plist";
 				PRODUCT_NAME = "MBTA-RestKitTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
