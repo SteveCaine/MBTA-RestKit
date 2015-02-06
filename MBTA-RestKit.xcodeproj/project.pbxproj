@@ -600,7 +600,7 @@
 		8E7EF7D91A5A51E100270944 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MBTA-APIs.app/MBTA-APIs";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MBTA-RestKit.app/MBTA-RestKit";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -622,7 +622,7 @@
 		8E7EF7DA1A5A51E100270944 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MBTA-APIs.app/MBTA-APIs";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MBTA-RestKit.app/MBTA-RestKit";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
