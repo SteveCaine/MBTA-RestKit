@@ -34,12 +34,18 @@
 
 // to write the raw JSON/XML response to NSLog, set this flag
 //
-//	#ifdef DEBUG
-//	#define DEBUG_logRawResponse	1
-//	#endif
+//		#ifdef DEBUG
+//		#define DEBUG_logRawResponse	1
+//		#endif
 //
 // in the 'Pods' Xcode project, specifically in the file
 //		./Pods/RestKit/Support Files/Pods-RestKit-prefix.pch
 // the added code it controls is in
 //		./Pods/RestKit/Network/RKResponseMapperOperation.m main()
 // (Also note, these are paths in the Xcode project, *not* in the OS X file system!)
+
+// the added code goes just after the second '[self willFinish]; return;' in main() and is:
+//		#if DEBUG_logRawResponse
+//		NSString *text = [[NSString alloc] initWithData:self.data encoding:NSUTF8StringEncoding];
+//		NSLog(@"\n\nraw response = '%@'\n\n", text);
+//		#endif

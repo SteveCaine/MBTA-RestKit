@@ -312,7 +312,14 @@ static NSMutableDictionary *RKRegisteredResponseMapperOperationDataSourceClasses
         return;
     }
 
-    // Parse the response
+	// SPC 2014-12-31 flag to enable/disable writing
+	// full text of JSON/XML response to NSLog()
+#if DEBUG_logRawResponse
+	NSString *text = [[NSString alloc] initWithData:self.data encoding:NSUTF8StringEncoding];
+	NSLog(@"\n\nraw response = '%@'\n\n", text);
+#endif
+	
+	// Parse the response
     NSError *error;
     id parsedBody = [self parseResponseData:&error];
     if (self.isCancelled) return [self willFinish];
